@@ -5,12 +5,15 @@
  **************************************************************************/
 
 import React from "react";
-import { Product } from "../models";
 import { EscapeHatchProps } from "@aws-amplify/ui-react/internal";
-import { FlexProps } from "@aws-amplify/ui-react";
-export declare type CardAProps = React.PropsWithChildren<Partial<FlexProps> & {
-    product?: Product;
+import { CollectionProps } from "@aws-amplify/ui-react";
+export declare type CardACollectionProps = React.PropsWithChildren<Partial<CollectionProps<any>> & {
+    items?: any[];
+    overrideItems?: ({ item: any, index: number }: {
+        item: any;
+        index: any;
+    }) => EscapeHatchProps;
 } & {
     overrides?: EscapeHatchProps | undefined | null;
 }>;
-export default function CardA(props: CardAProps): React.ReactElement;
+export default function CardACollection(props: CardACollectionProps): React.ReactElement;

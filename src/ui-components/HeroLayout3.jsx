@@ -6,10 +6,18 @@
 
 /* eslint-disable */
 import React from "react";
-import { getOverrideProps } from "@aws-amplify/ui-react/internal";
+import {
+  getOverrideProps,
+  useNavigateAction,
+} from "@aws-amplify/ui-react/internal";
 import { Button, Flex, Text } from "@aws-amplify/ui-react";
 export default function HeroLayout3(props) {
   const { overrides, ...rest } = props;
+  const buttonOnClick = useNavigateAction({
+    target: "_blank",
+    type: "url",
+    url: "https://www.figma.com/file/Fuzaju6nTVbhZEpG3qhOEj/AWS-Amplify-UI-Kit-(Community)?node-id=2976%3A6558",
+  });
   return (
     <Flex
       gap="10px"
@@ -55,7 +63,7 @@ export default function HeroLayout3(props) {
           position="relative"
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
-          children="LOREM IPSUM"
+          children="TEST AMPLIFY STUDIO"
           {...getOverrideProps(overrides, "LOREM IPSUM")}
         ></Text>
         <Flex
@@ -84,7 +92,7 @@ export default function HeroLayout3(props) {
             position="relative"
             padding="0px 0px 0px 0px"
             whiteSpace="pre-wrap"
-            children="Ut enim ad minim veniam quis nostrud"
+            children="Hi! I'm Chai. Front-end developer at Ivlyfe company"
             {...getOverrideProps(
               overrides,
               "Ut enim ad minim veniam quis nostrud"
@@ -107,7 +115,7 @@ export default function HeroLayout3(props) {
             position="relative"
             padding="0px 0px 0px 0px"
             whiteSpace="pre-wrap"
-            children="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
+            children="Today I will talk about component that figma provides to Amplify Studio. All component is a small component that can summary to big component"
             {...getOverrideProps(
               overrides,
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
@@ -125,6 +133,9 @@ export default function HeroLayout3(props) {
           size="large"
           variation="primary"
           children="Primary Button"
+          onClick={() => {
+            buttonOnClick();
+          }}
           {...getOverrideProps(overrides, "Button")}
         ></Button>
       </Flex>

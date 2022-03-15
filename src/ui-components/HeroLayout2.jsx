@@ -29,6 +29,7 @@ export default function HeroLayout2(props) {
         right="0%"
         width="100%"
         padding="0px 0px 0px 0px"
+        src="https://images.unsplash.com/photo-1618111415112-793c80d2fb3b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY0NzM2NDQ3MQ&ixlib=rb-1.2.1&q=80&w=1080"
         {...getOverrideProps(overrides, "image")}
       ></Image>
       <HeroLayout3

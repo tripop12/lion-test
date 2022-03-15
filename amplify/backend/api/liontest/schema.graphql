@@ -1,0 +1,13 @@
+type Product @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  address: String
+  price: Float
+  image_url: String
+}
+
+type Features @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String
+  describe: String
+}
+ 

@@ -5,12 +5,9 @@
  **************************************************************************/
 
 import React from "react";
-import { Product } from "../models";
 import { EscapeHatchProps } from "@aws-amplify/ui-react/internal";
 import { FlexProps } from "@aws-amplify/ui-react";
-export declare type CardAProps = React.PropsWithChildren<Partial<FlexProps> & {
-    product?: Product;
-} & {
+export declare type FeatureTabProps = React.PropsWithChildren<Partial<FlexProps> & {
     overrides?: EscapeHatchProps | undefined | null;
 }>;
-export default function CardA(props: CardAProps): React.ReactElement;
+export default function FeatureTab(props: FeatureTabProps): React.ReactElement;
