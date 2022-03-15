@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import {
+  CardA,
+  Features2x2,
+  Features4x1,
+  HeroLayout2,
+  HeroLayout3,
+  NavBar,
+} from "./ui-components";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <p>Tripop Torcheep</p>
-      </header>
+      <NavBar />
+      <HeroLayout2 />
+      <div style={{marginTop: 10, marginBottom: 10}}>
+        <Features4x1 />
+      </div>
+      <div className="Card">
+        <CardA />
+        <CardA />
+        <CardA />
+        <CardA />
+      </div>
+      <Features2x2 />
     </div>
   );
 }
