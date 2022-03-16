@@ -9,7 +9,6 @@
             "authenticationType": "API_KEY",
             "apiKeyConfig": {
               "apiKeyExpirationDays": 30,
-              "apiKeyExpirationDate": "2022-04-15T01:51:16.804Z",
               "description": "api key description"
             }
           },
@@ -20,41 +19,6 @@
           ]
         }
       }
-    }
-  },
-  "auth": {
-    "liontest": {
-      "service": "Cognito",
-      "providerPlugin": "awscloudformation",
-      "dependsOn": [],
-      "customAuth": false,
-      "frontendAuthConfig": {
-        "socialProviders": [],
-        "usernameAttributes": [
-          "EMAIL"
-        ],
-        "signupAttributes": [],
-        "passwordProtectionSettings": {
-          "passwordPolicyMinLength": 6,
-          "passwordPolicyCharacters": [
-            "REQUIRES_NUMBERS"
-          ]
-        },
-        "mfaConfiguration": "OFF",
-        "mfaTypes": [
-          "SMS"
-        ],
-        "verificationMechanisms": [
-          "EMAIL"
-        ]
-      }
-    }
-  },
-  "storage": {
-    "s3e2ed816f": {
-      "service": "S3",
-      "providerPlugin": "awscloudformation",
-      "dependsOn": []
     }
   }
 }
