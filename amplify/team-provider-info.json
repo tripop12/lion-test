@@ -10,6 +10,11 @@
       "StackName": "amplify-liontest-staging-163554",
       "StackId": "arn:aws:cloudformation:ap-southeast-1:220759422821:stack/amplify-liontest-staging-163554/fc4f3780-a47d-11ec-8f9a-0abb85f3725a",
       "AmplifyAppId": "dgf7xkeqax7s1"
+    },
+    "categories": {
+      "auth": {
+        "liontest": {}
+      }
     }
   }
 }

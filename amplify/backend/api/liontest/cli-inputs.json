@@ -3,11 +3,12 @@
   "serviceConfiguration": {
     "apiName": "liontest",
     "serviceName": "AppSync",
-    "gqlSchemaPath": "/tmp/amplify-ec6d33df-f8ec-4dd5-ae3a-cd8b19d0b1a8/amplify/backend/api/liontest/schema.graphql",
+    "gqlSchemaPath": "/Users/qualint/Documents/AmplifyStudio/lion-test/amplify/backend/api/liontest/schema.graphql",
     "defaultAuthType": {
       "mode": "API_KEY",
-      "keyDescription": "api key description",
-      "expirationTime": 30
+      "expirationTime": 30,
+      "apiKeyExpirationDate": "2022-04-15T01:51:16.804Z",
+      "keyDescription": "api key description"
     },
     "additionalAuthTypes": [
       {
