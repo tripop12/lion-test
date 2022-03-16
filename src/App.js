@@ -21,7 +21,7 @@ function App() {
         <CardACollection />
       </div>
       <Features2x2 />
-      {/* <MarketingFooter /> */}
+      <MarketingFooter />
     </div>
   );
 }
